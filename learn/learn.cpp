@@ -9,12 +9,21 @@ int main()
 {
 	//init vars
 	int a, b, exit;
+	int randomNum[3];
 	std::string text[5];
+	std::ostringstream rString;
+
+	//set vars
+	srand(time(0));
+	randomNum[0] = rand();
+	randomNum[1] = rand();
+	randomNum[2] = rand();
+	rString << "\nHmm...thinking. \n\n" << randomNum[0] << "? " << randomNum[1] << "? " << randomNum[2] << "? \n\nNope. The sum must be ";
 
 	//set text vars
 	text[0] = "I'm a little computer brain that can add up two numbers. What's the first number you want me to add up?\n";
 	text[1] = "And the second?\n";
-	text[2] = "\nHmm...thinking. \n\n13? 48? 1,433,456? \n\nNope. The sum must be ";
+	text[2] = rString.str();
 	text[3] = ".\n\n\n";
 	text[4] = "Type any number and hit the enter key to exit...\n";
 
