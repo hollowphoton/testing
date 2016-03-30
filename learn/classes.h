@@ -10,6 +10,7 @@
 class mathBot
 {
 	public:
+		bool quit = false;
 		mathBot();
 		void divide();
 		void multiply();
@@ -20,6 +21,7 @@ class mathBot
 		void listOptions();
 		void giveResult(double answer);
 		void mainMenu();
+		void quitProgram();
 	protected:
 	private:
 };

@@ -8,15 +8,19 @@
 //main
 int main()
 {
+
 	//seed random number generator
 	srand(time(0));
 
 	//initialize mathbot
 	mathBot Bender;
 
-	//load main menu
-	Bender.mainMenu();
-
+	//program loop
+	while (Bender.quit == false) {
+		//load main menu
+		Bender.mainMenu();
+	}
+	
 	//exit
     return 0;
 }

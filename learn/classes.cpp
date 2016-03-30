@@ -157,14 +157,28 @@
 		//call method depending on the choice
 		switch (choice) {
 			//math functions
-			case 1: mathBot::add();
-			case 2: mathBot::subtract();
-			case 3: mathBot::multiply();
-			case 4: mathBot::divide();
-			case 5: mathBot::exponent();
-			case 6: mathBot::factorial();
+			case 1: 
+				mathBot::add();
+				break;
+			case 2: 
+				mathBot::subtract();
+				break;
+			case 3: 
+				mathBot::multiply();
+				break;
+			case 4: 
+				mathBot::divide();
+				break;
+			case 5: 
+				mathBot::exponent();
+				break;
+			case 6: 
+				mathBot::factorial();
+				break;
 			//invalid choice
-			default: std::cout << "Right... Option #" << choice << "...\n\nThat's the option where I don't do anything.\n";
+			default:
+				std::cout << "Right... Option #" << choice << "...\n\nThat's the option where I don't do anything.\n";
+				system("pause");
 		}
 
 	}
@@ -186,9 +200,6 @@
 
 		//clear screen
 		std::cout << std::string(50, '\n');
-
-		//go back to main menu
-		mathBot::mainMenu();
 
 	}
 
@@ -212,5 +223,16 @@
 			//math functions
 			mathBot::listOptions();
 		}
+		else {
+			mathBot::quitProgram();
+		}
+
+	}
+
+	//quit program
+	void mathBot::quitProgram() {
+
+		//set quit to true
+		mathBot::quit = true;
 
 	}

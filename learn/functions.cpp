@@ -41,7 +41,7 @@ int exponentNum(int x, int y) {
 	int solution = x;
 	//loop and multiply x by itself y times
 	for (int iterations = (y - 1); iterations > 0; iterations--) {
-		solution = solution * y;
+		solution = solution * x;
 	}
 	//return value
 	return solution;
