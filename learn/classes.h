@@ -10,20 +10,29 @@
 class mathBot
 {
 	public:
+		//vars
 		bool quit = false;
+		float a, b = 0;
+		//constructor
 		mathBot();
+		//methods
+		void mainMenu();
+	protected:
+	private:
+		//methods
 		void divide();
 		void multiply();
 		void add();
 		void subtract();
 		void exponent();
 		void factorial();
+		void clearScreen();
+		void clearVars();
+		void takeNap(float sec);
+		void explode();
 		void listOptions();
-		void giveResult(double answer);
-		void mainMenu();
+		void giveResult(float answer);
 		void quitProgram();
-	protected:
-	private:
 };
 
 

@@ -4,41 +4,41 @@
 #include "functions.h"
 
 //add function
-int addNum(int x, int y) {
+float addNum(float x, float y) {
 	//add both numbers
-	int solution = x + y;
+	float solution = x + y;
 	//return value
 	return solution;
 }
 
 //subtract function
-int subtractNum(int x, int y) {
+float subtractNum(float x, float y) {
 	//subtract y from x
-	int solution = x - y;
+	float solution = x - y;
 	//return value
 	return solution;
 }
 
 //multiply function
-int multiplyNum(int x, int y) {
+float multiplyNum(float x, float y) {
 	//multiply both numbers
-	int solution = x * y;
+	float solution = x * y;
 	//return value
 	return solution;
 }
 
 //divide function
-double divideNum(double x, int y) {
+float divideNum(float x, float y) {
 	//divide x by y
-	double solution = x / y;
+	float solution = x / y;
 	//return value
 	return solution;
 }
 
 //exponent function
-int exponentNum(int x, int y) {
+float exponentNum(float x, int y) {
 	//set solution to x
-	int solution = x;
+	float solution = x;
 	//loop and multiply x by itself y times
 	for (int iterations = (y - 1); iterations > 0; iterations--) {
 		solution = solution * x;
@@ -48,7 +48,7 @@ int exponentNum(int x, int y) {
 }
 	
 //factorial function
-int factorialNum(int x) {
+float factorialNum(float x) {
 	//loop and call itself until done
 	if (x == 1) {
 		return 1;

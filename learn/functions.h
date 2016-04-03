@@ -3,11 +3,11 @@
 
 #include "stdafx.h"
 
-int addNum(int x, int y);
-int subtractNum(int x, int y);
-int multiplyNum(int x, int y);
-double divideNum(double x, int y);
-int exponentNum(int x, int y);
-int factorialNum(int x);
+float addNum(float x, float y);
+float subtractNum(float x, float y);
+float multiplyNum(float x, float y);
+float divideNum(float x, float y);
+float exponentNum(float x, int y);
+float factorialNum(float x);
 
 #endif
