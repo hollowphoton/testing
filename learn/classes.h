@@ -35,6 +35,4 @@ class mathBot
 		void quitProgram();
 };
 
-
-
 #endif //end definition check

@@ -37,16 +37,22 @@ float divideNum(float x, float y) {
 
 //exponent function
 float exponentNum(float x, int y) {
-	//set solution to x
-	float solution = x;
-	//loop and multiply x by itself y times
-	for (int iterations = (y - 1); iterations > 0; iterations--) {
-		solution = solution * x;
+	//if exponent is zero or less, value is 1
+	if (y <= 0) {
+		return 1;
 	}
-	//return value
-	return solution;
+	else {
+		//set solution to x
+		float solution = x;
+		//loop and multiply x by itself y times
+		for (int iterations = (y - 1); iterations > 0; iterations--) {
+			solution = solution * x;
+		}
+		//return value
+		return solution;
+	}
 }
-	
+
 //factorial function
 float factorialNum(float x) {
 	//loop and call itself until done
@@ -55,5 +61,41 @@ float factorialNum(float x) {
 	}
 	else {
 		return x * factorialNum(x - 1);
+	}
+}
+
+//low boundary function
+unsigned long long lowBound(int exp) {
+	//if exponent is zero or less, value is 1
+	if (exp <= 0) {
+		return 1;
+	}
+	else {
+		//set solution to x
+		unsigned long long solution = 10;
+		//loop and multiply x by itself y times
+		for (int iterations = (exp - 1); iterations > 0; iterations--) {
+			solution = solution * 10;
+		}
+		//return value
+		return solution;
+	}
+}
+
+//high boundary function
+unsigned long long highBound(int exp) {
+	//if exponent is zero or less, value is 1
+	if (exp <= 0) {
+		return 1;
+	}
+	else {
+		//set solution to x
+		unsigned long long solution = 10;
+		//loop and multiply x by itself y times
+		for (int iterations = (exp - 1); iterations > 0; iterations--) {
+			solution = solution * 10;
+		}
+		//return value
+		return (solution - 1);
 	}
 }
