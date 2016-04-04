@@ -15,6 +15,7 @@ int main()
 	//initialize mathbot
 	mathBot Bender;
 
+
 	//program loop
 	while (Bender.quit == false) {
 		//load main menu
