@@ -12,7 +12,8 @@ class mathBot
 	public:
 		//vars
 		bool quit = false;
-		float a, b = 0;
+		long double a, b = 0;
+		unsigned long long c = 0;
 		//constructor
 		mathBot();
 		//methods
@@ -28,10 +29,10 @@ class mathBot
 		void factorial();
 		void clearScreen();
 		void clearVars();
-		void takeNap(float sec);
+		void takeNap(long double sec);
 		void explode();
 		void listOptions();
-		void giveResult(float answer);
+		void giveResult(long double answer);
 		void quitProgram();
 };
 

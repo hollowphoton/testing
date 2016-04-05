@@ -36,33 +36,30 @@
 		std::cout << "What's the first number you want to add up?\n";
 		std::cin >> mathBot::a;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-				
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the first number you want to add up?\n";
+				std::cin >> mathBot::a;
 			}
 		std::cout << "\nAnd the second?\n";
 		std::cin >> mathBot::b;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::b = rand() % 100 + 1;
-				
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::b << " right? Ok.\n";
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the second number you want to add up?\n";
+				std::cin >> mathBot::b;
 			}
 		mathBot::giveResult(addNum(mathBot::a, mathBot::b));
 
@@ -80,33 +77,30 @@
 		std::cout << "What's the number you want to subtract from?\n";
 		std::cin >> mathBot::a;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the number you want to subtract from?\n";
+				std::cin >> mathBot::a;
 			}
 		std::cout << "\nAnd the number to subtract?\n";
 		std::cin >> mathBot::b;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::b = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::b << " right? Ok.\n";
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the number you want to subtract?\n";
+				std::cin >> mathBot::b;
 			}
 		mathBot::giveResult(subtractNum(mathBot::a, mathBot::b));
 
@@ -124,33 +118,30 @@
 		std::cout << "What's the number you want to divide?\n";
 		std::cin >> mathBot::a;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the number you want to divide?\n";
+				std::cin >> mathBot::a;
 			}
 		std::cout << "\nAnd the number to divide by?\n";
 		std::cin >> mathBot::b;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::b = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::b << " right? Ok.\n";
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the number you want to divide by?\n";
+				std::cin >> mathBot::b;
 			}
 
 		//explode if dividing by 0, otherwise calculate
@@ -176,33 +167,30 @@
 		std::cout << "What's the first number you want to multiply?\n";
 		std::cin >> mathBot::a;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the first number you want to multiply?\n";
+				std::cin >> mathBot::a;
 			}
 		std::cout << "\nAnd the second?\n";
 		std::cin >> mathBot::b;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::b = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::b << " right? Ok.\n";
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the second number you want to multiply?\n";
+				std::cin >> mathBot::b;
 			}
 		mathBot::giveResult(multiplyNum(mathBot::a, mathBot::b));
 
@@ -220,35 +208,32 @@
 		std::cout << "What's the base number?\n";
 		std::cin >> mathBot::a;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the base number?\n";
+				std::cin >> mathBot::a;
 			}
 		std::cout << "\nAnd the exponent?\n";
-		std::cin >> mathBot::b;
+		std::cin >> mathBot::c;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::b = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::b << " right? Ok.\n";
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the the exponent?\n";
+				std::cin >> mathBot::c;
 			}
-		mathBot::giveResult(exponentNum(mathBot::a, mathBot::b));
+		mathBot::giveResult(exponentNum(mathBot::a, mathBot::c));
 
 	}
 
@@ -262,22 +247,20 @@
 		std::cout << "Ok. Let's calculate the factorial of a number.\n";
 		mathBot::takeNap(.5);
 		std::cout << "What's the number?\n";
-		std::cin >> mathBot::a;
+		std::cin >> mathBot::c;
 			//check if input is valid
-			if (!std::cin)
+			while (!std::cin)
 			{
-				//code a with random # between 1 and 100
-				mathBot::a = rand() % 100 + 1;
-
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
 
 				//inform user
-				std::cout << "\nI didn't hear you too well. You said " << mathBot::a << " right? Ok.\n";
-
+				std::cout << "\nThat's not a valid number. \n";
+				std::cout << "What's the number?\n";
+				std::cin >> mathBot::c;
 			}
-		mathBot::giveResult(factorialNum(mathBot::a));
+		mathBot::giveResult(factorialNum(mathBot::c));
 
 	}
 
@@ -309,6 +292,18 @@
 
 		//get choice
 		std::cin >> choice;
+			//check if input is valid
+			while (!std::cin)
+			{
+				// reset failure
+				std::cin.clear();
+				std::cin.ignore(10000, '\n');
+
+				//inform user
+				std::cout << "\nThat's not a valid choice.\n";
+				std::cout << "Which menu option do you choose?\n";
+				std::cin >> choice;
+			}
 
 		//call method depending on the choice
 		switch (choice) {
@@ -340,10 +335,10 @@
 	}
 
 	//give result
-	void mathBot::giveResult(float answer) {
+	void mathBot::giveResult(long double answer) {
 
 		//init vars
-		float randomNum[3];
+		long double randomNum[3];
 
 		//make random numbers
 		randomNum[0] = rand() % 100 + 1;
@@ -380,11 +375,11 @@
 
 		//intro
 
-		std::cout << "  _______ _______ _______ _     _ ______   _____  _______  \n";
+		std::cout << "  _______ _______ _______ _     _ ______  _______ _______  \n";
 		std::cout << "  |  |  | |_____|    |    |_____| |_____] |     |    |     \n";
 		std::cout << "  |  |  | |     |    |    |     | |_____] |_____|    |     \n";
 		std::cout << "                                                           \n";
-		std::cout << "                        version 1.3                        \n";
+		std::cout << "                        version 1.4                        \n";
 		std::cout << "                                                           \n";
 		std::cout << "===============--------- Main Menu ---------===============\n";
 		std::cout << "===-             1) Math   -===-   2) Quit             -===\n";
@@ -392,6 +387,18 @@
 		
 		//get choice
 		std::cin >> option;
+			//check if input is valid
+			while (!std::cin)
+			{
+				// reset failure
+				std::cin.clear();
+				std::cin.ignore(10000, '\n');
+
+				//inform user
+				std::cout << "\nThat's not a valid choice.\n";
+				std::cout << "Which menu option do you choose?\n";
+				std::cin >> option;
+			}
 
 		//make choice
 		switch (option) {
@@ -405,7 +412,7 @@
 			break;
 			//invalid choice
 		default:
-			std::cout << "\nI didn't list an Option #" << option << "...\n";
+			std::cout << "\nI didn't list an option #" << option << "...\n\n";
 			mathBot::takeNap(1);
 			system("pause");
 		}
@@ -434,11 +441,12 @@
 		//clear both values
 		mathBot::a = 0;
 		mathBot::b = 0;
+		mathBot::c = 0;
 
 	}
 
 	//take a nap
-	void mathBot::takeNap(float sec) {
+	void mathBot::takeNap(long double sec) {
 
 		//sleep
 		Sleep(sec * 1000);

@@ -4,46 +4,58 @@
 #include "functions.h"
 
 //add function
-float addNum(float x, float y) {
+long double addNum(long double x, long double y) {
 	//add both numbers
-	float solution = x + y;
+	long double solution = x + y;
 	//return value
 	return solution;
 }
 
 //subtract function
-float subtractNum(float x, float y) {
+long double subtractNum(long double x, long double y) {
 	//subtract y from x
-	float solution = x - y;
+	long double solution = x - y;
 	//return value
 	return solution;
 }
 
 //multiply function
-float multiplyNum(float x, float y) {
+long double multiplyNum(long double x, long double y) {
 	//multiply both numbers
-	float solution = x * y;
+	long double solution = x * y;
 	//return value
 	return solution;
 }
 
 //divide function
-float divideNum(float x, float y) {
+long double divideNum(long double x, long double y) {
 	//divide x by y
-	float solution = x / y;
+	long double solution = x / y;
 	//return value
 	return solution;
 }
 
 //exponent function
-float exponentNum(float x, int y) {
-	//if exponent is zero or less, value is 1
-	if (y <= 0) {
+long double exponentNum(long double x, int y) {
+	//if exponent is zero, value is 1
+	if (y = 0) {
 		return 1;
 	}
+	//if exponent is less than zero, divide
+	if (y < 0) {
+		//set solution to x
+		long double solution = x;
+		//loop and multiply x by itself y times
+		for (int iterations = ((y*-1) - 1); iterations > 0; iterations--) {
+			solution = solution / x;
+		}
+		//return value
+		return solution;
+	}
+	//if exponent is greater than zero, multiply
 	else {
 		//set solution to x
-		float solution = x;
+		long double solution = x;
 		//loop and multiply x by itself y times
 		for (int iterations = (y - 1); iterations > 0; iterations--) {
 			solution = solution * x;
@@ -54,7 +66,7 @@ float exponentNum(float x, int y) {
 }
 
 //factorial function
-float factorialNum(float x) {
+unsigned long long factorialNum(unsigned long long x) {
 	//loop and call itself until done
 	if (x == 1) {
 		return 1;
