@@ -20,6 +20,9 @@ can think of any better ways to implement existing code.
 
 ===============---------- CHANGES ----------===============
 
+2016-04-05
+	-updated error checking on the main menu & func list
+
 2016-04-04
 	-previously, if a non-number was entered in a function,
 	 the program 'misheard' the user and suggested a random
