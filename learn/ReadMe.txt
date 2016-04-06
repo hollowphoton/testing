@@ -11,6 +11,13 @@ this as I learn new things here and there. Please check
 this out and let me know if you find any issues, bugs, or
 can think of any better ways to implement existing code.
 
+===============---------- UP NEXT ----------===============
+
+-Need to find a way to block errors like submitting '1a' in
+ the options menu; it works as 1 when ingested as an int.
+-add raw arithmetic parser? long term goal.
+-call explode() if an error is returned by any function.
+
 ===============---------- CHANGES ----------===============
 
 2016-04-04

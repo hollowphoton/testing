@@ -271,7 +271,7 @@
 		mathBot::clearScreen();
 
 		//init vars
-		int choice;
+		int choice = 0;
 
 		//list options
 		std::cout << "Not much works in safe mode, here's what I can do:\n";
@@ -293,8 +293,7 @@
 		//get choice
 		std::cin >> choice;
 			//check if input is valid
-			while (!std::cin)
-			{
+			while ((choice < 1) || (choice > 6) || (!std::cin)) {
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
@@ -326,10 +325,6 @@
 			case 6: 
 				mathBot::factorial();
 				break;
-			//invalid choice
-			default:
-				std::cout << "Right... Option #" << choice << "...\n\nThat's the option where I don't do anything.\n";
-				system("pause");
 		}
 
 	}
@@ -387,8 +382,7 @@
 		//get choice
 		std::cin >> option;
 			//check if input is valid
-			while (!std::cin)
-			{
+			while ( (option < 1) || (option > 2) || (!std::cin) ) {
 				// reset failure
 				std::cin.clear();
 				std::cin.ignore(10000, '\n');
@@ -401,19 +395,14 @@
 
 		//make choice
 		switch (option) {
-			//math functions
 		case 1:
 			//math functions
 			mathBot::listOptions();
 			break;
 		case 2:
+			//quit
 			mathBot::quitProgram();
 			break;
-			//invalid choice
-		default:
-			std::cout << "\nI didn't list an option #" << option << "...\n\n";
-			mathBot::takeNap(1);
-			system("pause");
 		}
 
 	}
